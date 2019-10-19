@@ -19,6 +19,11 @@ client.on('message', async (msg) => {
   } else if(command === 'steak'){
     let attach = new Attachment("https://media.giphy.com/media/9UyZI216ic5vG/giphy.gif");
     msg.channel.send(attach);
+  } else if (command === 'pog'){
+    pogEmbed = new Discord.RichEmbed()
+      .setAuthor('Pog')
+      .setDescription("Pogers")
+      .setTimestamp()
   } else if(command === 'lul') {
     const attachment = new Attachment('https://ubisafe.org/images/lul-transparent-twitch-1.png');
     msg.channel.send(attachment);
